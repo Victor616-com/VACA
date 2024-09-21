@@ -62,7 +62,7 @@ initApp();
 
 /* -------- Header java --------- */
 
-var lastScrollTOp = 0;
+/*var lastScrollTOp = 0;
 const navbar = document.getElementById('header');
 window.addEventListener('scroll', function() {
     var scrollTop = window.pageYOffset || document.documentElement.scrollTop
@@ -75,7 +75,7 @@ window.addEventListener('scroll', function() {
     }
     lastScrollTOp = scrollTop
 })
-
+*/
 /* ------ Open / CLose Cart ------ */
 
 const openCartButtons = document.querySelectorAll('[data-cart-target]');
