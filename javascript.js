@@ -75,7 +75,7 @@ window.addEventListener('scroll', function() {
     }
     lastScrollTOp = scrollTop
 })
-*/
+
 /* ------ Open / CLose Cart ------ */
 
 const openCartButtons = document.querySelectorAll('[data-cart-target]');
