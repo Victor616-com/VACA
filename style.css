@@ -150,9 +150,9 @@ p {
 #cart-body #cart-items-container .item-in-cart .item-right-section {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    gap: 30px;
+    width: 190px;
     margin-right: 30px;
 }
 
@@ -161,7 +161,8 @@ p {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    width: 100px;
+    
 }
 #cart-body #cart-items-container .item-in-cart .item-right-section .increse-decrese img {
     height: 24px;
@@ -232,6 +233,10 @@ p {
     height: 100vh;
     overflow: hidden;
 }
+
+/* -------- Menu Editor style ---------- */
+
+
 
 /* -------- Header style ---------- */
 #container {
@@ -420,7 +425,63 @@ header #bottom-header {
     
 }
 
+/* -------- Sides section --------- */
 
+.items-container-sides {
+    display: flex;
+    flex-direction: row;
+    column-gap: 53px;
+    row-gap: 30px;
+    flex-wrap: wrap;
+}
+
+#sides .card-body {
+    height: 240px;
+    
+}
+
+.add-item-to-cart {
+    background-color: var(--yellow);
+    border: none;
+    border-radius: 15px;
+    width: 170px;
+    padding: 10px;
+    font-family: "Poppins", system-ui;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15px;
+    color: white;
+}
+
+/* -------- Snacks section --------- */
+
+.items-container-snacks {
+    display: flex;
+    flex-direction: row;
+    column-gap: 53px;
+    row-gap: 30px;
+    flex-wrap: wrap;
+}
+
+#snacks .card-body {
+    height: 250px;
+    
+}
+
+/* -------- Burritos section --------- */
+
+.items-container-burritos {
+    display: flex;
+    flex-direction: row;
+    column-gap: 53px;
+    row-gap: 30px;
+    flex-wrap: wrap;
+}
+
+#burritos .card-body {
+    height: 280px;
+    
+}
 
 
 

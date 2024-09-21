@@ -58,6 +58,200 @@
         "beef": true,
         "chicken": true,
         "pork": true 
+    },
+    {
+        "id": 7,
+        "name": "Taco haps",
+        "description": "Grilled taco with cheese - choose between beef or chicken.",
+        "image": "resources/img/item7.png",
+        "price": 25,
+        "beef": true,
+        "chicken": true,
+        "pork": false
+    },
+    {
+        "id": 8,
+        "name": "Taco Pancakes (2 pcs.)",
+        "description": "Taco pancakes with nutella and marshmallows.",
+        "image": "resources/img/item8.png",
+        "price": 36,
+        "beef": false,
+        "chicken": false,
+        "pork": false
+    },
+    {
+        "id": 9,
+        "name": "Churros with sugar & cinnamon",
+        "description": "Delicious Churros with sugar & cinnamon ",
+        "image": "resources/img/item9.png",
+        "price": 39,
+        "beef": false,
+        "chicken": false,
+        "pork": false 
+    },
+    {
+        "id": 10,
+        "name": "Tortilla chips",
+        "description": "Homemade tortilla chips with tomato powder. Served with optional dip.",
+        "image": "resources/img/item10.png",
+        "price": 40,
+        "beef": false,
+        "chicken": false,
+        "pork": false 
+    },
+    {
+        "id": 11,
+        "name": "Pork Belly",
+        "description": "Pork belly chips with tomato powder. They are quite good",
+        "image": "resources/img/item11.png",
+        "price": 35,
+        "beef": false,
+        "chicken": false,
+        "pork": true 
+    },
+    {
+        "id": 12,
+        "name": "Padrons",
+        "description": "Deep-fried padron peppers with chilli flakes and salt. Served with lime.",
+        "image": "resources/img/item12.png",
+        "price": 38,
+        "beef": false,
+        "chicken": false,
+        "pork": false 
+    },
+    {
+        "id": 13,
+        "name": "Nachos",
+        "description": "Tortilla chips, chicken, Gouda cheese and tomato salsa. ",
+        "image": "resources/img/item13.png",
+        "price": 105,
+        "beef": false,
+        "chicken": true,
+        "pork": false,
+        "shrimp": false
+    },
+    {
+        "id": 14,
+        "name": "The perfect duo",
+        "description": "Guacamole and tortilla chips in three different sizes.",
+        "image": "resources/img/item14.png",
+        "price": 49,
+        "beef": false,
+        "chicken": false,
+        "pork": false,
+        "shrimp": false 
+    },
+    {
+        "id": 15,
+        "name": "Crispy chicken snack",
+        "description": "Crispy, crunchy chicken fillets. Served with lime and a dip of your choice.",
+        "image": "resources/img/item15.png",
+        "price": 95,
+        "beef": false,
+        "chicken": true,
+        "pork": false,
+        "shrimp": false 
+    },
+    {
+        "id": 16,
+        "name": "Tempura shrimp snack",
+        "description": "Crispy, crunchy tempura prawns. Served with lime and a dip of your choice.",
+        "image": "resources/img/item16.png",
+        "price": 95,
+        "beef": false,
+        "chicken": false,
+        "pork": false,
+        "shrimp": true
+    },
+    {
+        "id": 17,
+        "name": "Amigo grande",
+        "description": "Long-braised beef, tomatillo crunch, rice, beans, seasonal salad, tomato salsa, Gouda cheese",
+        "image": "resources/img/item17.png",
+        "price": 119,
+        "beef": true,
+        "chicken": false,
+        "pork": false 
+    },
+    {
+        "id": 18,
+        "name": "VACA crispy chicken original",
+        "description": "Tempura chicken, rice, seasonal salad, tomatillo crunch, tomato salsa, Gouda cheese",
+        "image": "resources/img/item18.png",
+        "price": 119,
+        "beef": false,
+        "chicken": true,
+        "pork": false 
+    },
+    {
+        "id": 19,
+        "name": "Crunchy cerdo  🌶🌶",
+        "description": "Long-braised pork, crispy pork belly, beans, seasonal salad, sour cabbage, tomato salsa",
+        "image": "resources/img/item19.png",
+        "price": 109,
+        "beef": false,
+        "chicken": false,
+        "pork": true 
+    },
+    {
+        "id": 20,
+        "name": "Madre favorite  🌶🌶",
+        "description": "Chicken, rice, tomatillo crunch, seasonal salad, corn salsa, crispy onions, Gouda cheese.",
+        "image": "resources/img/item20.png",
+        "price": 109,
+        "beef": false,
+        "chicken": true,
+        "pork": false 
+    },
+    {
+        "id": 21,
+        "name": "Con carne",
+        "description": "Mexican meat sauce, beans, rice, seasonal salad, tomato salsa, Gouda cheese, crispy onions and sour cream.",
+        "image": "resources/img/item21.png",
+        "price": 109,
+        "beef": true,
+        "chicken": false,
+        "pork": false 
+    },
+    {
+        "id": 22,
+        "name": "Vegan (VG) 🌶",
+        "description": "Mexican falafel, tomatillo crunch, tomato salsa, rice, sour cabbage, beans, seasonal salad, chili mayo and medium chili salsa.",
+        "image": "resources/img/item22.png",
+        "price": 109,
+        "beef": false,
+        "chicken": false,
+        "pork": false 
+    },{
+        "id": 23,
+        "name": "Green peas (VG)",
+        "description": "Pea protein, vegan cheese, rice, corn salsa, seasonal salad, tomato salsa, chili mayo and VACA BBQ sauce.",
+        "image": "resources/img/item23.png",
+        "price": 109,
+        "beef": false,
+        "chicken": false,
+        "pork": false 
+    },{
+        "id": 24,
+        "name": "Jack (VG)",
+        "description": "Pulled jackfruit, beans, rice, pickled red onions, tomatillo crunch, seasonal salad and chili mayo.",
+        "image": "resources/img/item24.png",
+        "price": 109,
+        "beef": false,
+        "chicken": false,
+        "pork": false 
+    },{
+        "id": 25,
+        "name": "Taco kit",
+        "description": "1 optional protein and 1 optional dip. 4 taco pancakes, seasonal salad, coriander, lime, tomato salsa, pickled red onions and crunch strips are included.",
+        "image": "resources/img/item25.png",
+        "price": 119,
+        "beef": true,
+        "chicken": true,
+        "pork": true 
     }
+
+
+    
     
 ]
