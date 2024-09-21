@@ -199,6 +199,8 @@ document.addEventListener('click', (event) => {
     if(positionClick.classList.contains('add-item-to-cart')){
         let product_id = positionClick.closest('.item').dataset.id;
         addToCart(product_id);
+        positionClick.classList.add('onclick');
+
     }
 });
 
@@ -218,8 +220,12 @@ const addToCart = (product_id) => {
         carts[positionThisProductInCart].quantity += 1;
     }
     addCartToHTML();
+    addCartToMemory();
 };
 
+const addCartToMemory = () => {
+    localStorage.setItem('cart', JSON.stringify(carts));
+}
 const addCartToHTML = () => {
     listCartHTML.innerHTML = '';
     let totalQuantity = 0;
@@ -238,7 +244,7 @@ const addCartToHTML = () => {
             totalPrice += info.price * cart.quantity;
             newCart.innerHTML = `
             <div class="item-left-section">
-                 <div class="delete-button"><img src="resources/img/delete.svg" alt="trash-can"></div>
+                 <div class="delete-button"><img src="resources/img/delete.svg" alt="trash-can" class="deleteButton" ></div>
                 <div class="image-cropper"><img src="${info.image}"></div>
                 <h2>${info.name}</h2>
                 <img src="resources/img/edit.svg" alt="edit" class="edit-icon">
@@ -266,8 +272,20 @@ listCartHTML.addEventListener('click', (event) => {
         let type = positionClick.classList.contains('plus') ? 'plus' : 'minus';
         changeQuantity(product_id, type);
     }
+    if (positionClick.classList.contains('deleteButton')){
+        let product_id = positionClick.closest('.item-in-cart').dataset.id;
+        
+        deleteItemInCart(product_id);
+    }
 });
 
+const deleteItemInCart = (product_id, type) => {
+    let positionItemInCart = carts.findIndex((value) => value.product_id == product_id);
+    if (positionItemInCart >= 0) {
+        carts.splice(positionItemInCart, 1);
+    }
+    addCartToHTML(); // Call this to update the cart display
+}
 const changeQuantity = (product_id, type) => {
     let positionItemInCart = carts.findIndex((value) => value.product_id == product_id); // Fixed comparison
     if (positionItemInCart >= 0) {
@@ -302,6 +320,13 @@ const initApp = () => {
         listProductsBurritos = data.slice(16, 24);
         addDataToHTML();
         
+
+        // Get the cart from the memory
+        if(localStorage.getItem('cart')) {
+            carts = JSON.parse(localStorage.getItem('cart'));
+            addCartToHTML();
+        }
+
     })
 }
 
