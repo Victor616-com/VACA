@@ -1,0 +1,63 @@
+[
+    {
+        "id": 1,
+        "name": "Burrito combo menu",
+        "description": "1 optional burrito, optional dip and 1 optional soft drink/water. Served with tortilla chips.",
+        "image": "resources/img/item1.jpg",
+        "price": 149,
+        "beef": true,
+        "chicken": true,
+        "pork": true
+    },
+    {
+        "id": 2,
+        "name": "Burrito bowl combo menu",
+        "description": "1 optional burrito bowl and 1 optional soft drink/water. Served with tortilla chips and optional dip.",
+        "image": "resources/img/item2.png",
+        "price": 149,
+        "beef": true,
+        "chicken": true,
+        "pork": true
+    },
+    {
+        "id": 3,
+        "name": "Chili con carne bowl combo menu",
+        "description": "1 chili con carne bowl of your choice and 1 soft drink/water of your choice. Served with tortilla chips",
+        "image": "resources/img/item3.png",
+        "price": 149,
+        "beef": true,
+        "chicken": false,
+        "pork": false 
+    },
+    {
+        "id": 4,
+        "name": "Ensalada bowl combo menu",
+        "description": "1 optional ensalada bowl and 1 optional soft drink/water. Served with tortilla chips",
+        "image": "resources/img/item4.png",
+        "price": 149,
+        "beef": false,
+        "chicken": false,
+        "pork": true 
+    },
+    {
+        "id": 5,
+        "name": "Quesadilla combo menu",
+        "description": "1 optional quesadilla, 2 optional dips and 1 optional soft drink/water. Served with tortilla chips.",
+        "image": "resources/img/item5.png",
+        "price": 149,
+        "beef": true,
+        "chicken": false,
+        "pork": true 
+    },
+    {
+        "id": 6,
+        "name": "Taco kit combo menu",
+        "description": "1 build yourself Taco kit, 1 optional dip and 1 optional soft drink/water. Served with tortilla chips.",
+        "image": "resources/img/item6.jpg",
+        "price": 149,
+        "beef": true,
+        "chicken": true,
+        "pork": true 
+    }
+    
+]
