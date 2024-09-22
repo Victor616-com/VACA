@@ -55,11 +55,29 @@ p {
     margin: 0;
 }
 
+#back-button {
+    top: 35px;
+    left: 66px;
+    position: fixed;
+    transform: translateX(-8px);
+    display: flex;
+    flex-direction: row;
+    width: 68px;
+    justify-content: space-between;
+    z-index: 800;
+
+}
+#back-button p {
+    font-family: "Poppins", system-ui;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+}
 
 /* -------- Cart style ---------- */
 
 #cart {
-    scale: 1;
+
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -67,8 +85,9 @@ p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
-    z-index: 5;
+    z-index: 6;
     transition: 200ms ease-in-out;
+
     
 }
 #cart-body {
@@ -101,6 +120,7 @@ p {
     background-color: rgb(255, 255, 255);
     gap: 20px;
     overflow: auto;
+    max-height: 410px;
 }
 #cart-body #cart-items-container::-webkit-scrollbar {
     display: none;
@@ -243,8 +263,172 @@ p {
 
 /* -------- Menu Editor style ---------- */
 
+.menu-editor {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: 20;
+    transition: 200ms ease-in-out;
+    
+}
+.menu-editor.editor-active {
+    transform: translate(-50%, -50%) scale(1);
+}
+.menu-editor .menu-body {
+    height: 642px;
+    width: 545px;
+    background-color: white;
+    border-radius: 15px;
+    transform: translate(0, 7%) scale(1);
+    
+}
+.menu-editor .image-cropper {
+    position: absolute;
+    width: 205px;
+    height: 205px;
+    overflow: hidden;
+    left: 50%;
+    transform: translate(-50%, -28%);
+    border-radius: 50%;
+    box-shadow: var(--image-box-shadow);
+    z-index: 3;
+}
+.menu-editor .image-cropper img {
+    width: 370px;
+}
+.menu-editor .menu-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: var(--item-box-shadow);
+}
+.menu-editor .menu-body .menu-editor-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 110px;
+    font-family: "Poppins", system-ui;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 24px;
+
+}
+.menu-editor .menu-body .menu-editor-header h1 {
+    margin: 0;
+}
+.menu-editor .menu-body .description {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 10px;
+    color: #7E7E7E;
+    margin-bottom: 15px;
+}
 
 
+
+.menu-editor .menu-body .list-container {
+    height: 700px;
+    overflow: scroll;
+    background-color: rgb(255, 255, 255);
+    overflow: auto;
+    max-height: 410px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.menu-editor .menu-body .list-container::-webkit-scrollbar {
+    display: none;
+}
+.menu-editor .menu-body .list-container .editor-list {
+    padding-left: 0;
+    font-family: "Poppins", system-ui;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+}
+.menu-editor .menu-body .list-container .editor-list li {
+    
+}
+.menu-editor .menu-body .list-container .editor-list li.list-active {
+    padding-bottom: 0px;
+}
+.menu-editor .menu-body .list-container .editor-list .nested {
+    list-style: inside url(resources/img/list-not-checked.svg);
+    padding-top: 10px;
+    font-weight: 400;
+    padding-left: 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    /*height: 0%;
+    transform: scale(0);*/
+}
+.menu-editor .menu-body .list-container > li {
+    cursor: pointer;
+}
+.menu-editor .menu-body .list-container .editor-list .nested.list-active {
+    max-height: 900px;
+}
+.menu-editor .menu-body .list-container .editor-list .nested li  {
+    padding-bottom: 20px;
+}
+.menu-editor .menu-body .list-container .editor-list .nested li::after {
+    margin-left: 30px;
+}
+.menu-editor .menu-body .menu-editor-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.menu-editor .menu-body .menu-editor-bottom .plus-minus-button-editor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 148px;
+    height: 46px;
+    border-radius: 9px;
+    background-color: black;
+    color: white;
+    font-family: "Poppins", system-ui;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    margin-left: 40px;
+}
+.menu-editor .menu-body .menu-editor-bottom .plus-minus-button-editor .minus-button-editor {
+    margin-left: 30px;
+}
+.menu-editor .menu-body .menu-editor-bottom .plus-minus-button-editor .plus-button-editor {
+    margin-right: 30px;
+}
+
+.menu-editor .menu-body .menu-editor-bottom .add-to-cart-button-editor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 274px;
+    height: 46px;
+    border-radius: 9px;
+    background-color: var(--yellow);
+    color: black;
+    font-family: "Poppins", system-ui;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    margin-right: 40px;
+}
+.menu-editor .menu-body .menu-editor-bottom .add-to-cart-button-editor h2 {
+    font-family: "Poppins", system-ui;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    margin-left: 25px;
+}
+.menu-editor .menu-body .menu-editor-bottom .add-to-cart-button-editor span {
+    margin-right: 25px;
+}
 /* -------- Header style ---------- */
 #container {
     transition: opacity 0.3s;
@@ -274,9 +458,15 @@ header #top-header {
 }
 
 header #top-header #vaca-logo {
-  margin-left: 77px;
+  margin-left: 443px;
 }
-
+#random { 
+    position: fixed;
+    height: 100px;
+    width: 300px;
+    background-color: #FDCE00;
+    z-index: 200;
+}
 header #top-header #nav-right-section{
     display: flex;
     align-items: center;
@@ -314,22 +504,6 @@ header #top-header #nav-right-section #language-selector img {
     position: absolute;
     top: -20%;
     right: -10px;
-}
-
-header #top-header #back-button {
-    transform: translateX(-8px);
-    display: flex;
-    flex-direction: row;
-    width: 68px;
-    justify-content: space-between;
-
-}
-
-header #top-header #back-button p {
-    font-family: "Poppins", system-ui;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 16px;
 }
 
 header #bottom-header {

@@ -44,6 +44,7 @@ const addDataToHTML = () => {
         listProductsMenus.forEach(product => {
             let newMenusProduct = document.createElement('div');
             newMenusProduct.classList.add('item');
+            newMenusProduct.dataset.id = product.id;
             newMenusProduct.innerHTML = `
                 <div class="sticker-container">
                     <img src="resources/img/cow-sticker.svg" alt="cow-sticker" class="cow-sticker">
@@ -55,14 +56,14 @@ const addDataToHTML = () => {
                     <div class="image-cropper"><img src="${product.image}" class="item-image"></div>
                 </div>
                         
-                <div class="card-body">
+                <div class="card-body" class="menu-item">
                     <h2>${product.name}</h2>
                     <p>${product.description}</p>
                     <h3>${product.price} kr</h3>
                 </div>
             `;
             listProductMenusHTML.appendChild(newMenusProduct);
-
+            newMenusProduct.classList.add('menu-item'); 
             let cowSticker = newMenusProduct.querySelector('.cow-sticker');
             let chickenSticker = newMenusProduct.querySelector('.chicken-sticker');
             let pigSticker = newMenusProduct.querySelector('.pig-sticker');
@@ -594,17 +595,32 @@ const addDataToHTML = () => {
 
 document.addEventListener('click', (event) => {
     let positionClick = event.target;
+    let positionClickMenu = event.target.closest('.menu-item') 
+
+
     /* ----- Code for opening menus editor ---- */
-    //if(positionClick.classList.contains(''))
+    if(positionClickMenu){
+        let product_id = positionClickMenu.closest('.item').dataset.id;
+        if(product_id == 1) {
+            let menuEditor = document.getElementById('menu-editor-burrito');
+            menuEditor.classList.add('editor-active');
+            overlay.classList.add('active');
+        }
+    }
+    
+
 
     /* ----- Code for add to cart button -----*/
     if(positionClick.classList.contains('add-item-to-cart')){
         let product_id = positionClick.closest('.item').dataset.id;
         addToCart(product_id);
         positionClick.classList.add('onclick');
+        
 
     }
 });
+
+
 
 
 /* ----- Function that adds a product to the shopping cart or increases its quantity if it’s already in the cart.  -----*/
@@ -794,6 +810,7 @@ const closeCartButtons = document.querySelectorAll('[data-cart-close]'); // I ca
 const overlay = document.getElementById('overlay');
 const stopScroll = document.getElementById('all-content-container');
 const bodyStopScroll = document.querySelector('body');
+const editor = document.querySelector('#menu-editor-burrito');
 
 openCartButtons.forEach(button => {
     button.addEventListener('click', () => {
@@ -805,10 +822,11 @@ openCartButtons.forEach(button => {
 
 closeCartButtons.forEach(button => {
     button.addEventListener('click', () => {
-        const cart = button.closest('#cart')
+        const cart = document.querySelector('#cart');
         closeCart(cart)
     })
 })
+
 
 function openCart(cart) {
     if (cart == null) return
@@ -821,8 +839,59 @@ function closeCart(cart) {
     cart.classList.remove('active')
     overlay.classList.remove('active')
     bodyStopScroll.classList.remove('active')
+    editor.classList.remove('editor-active')
 }
 
+
+const editorOptionsNew = document.querySelectorAll('.nested');
+
+editorOptionsNew.forEach(option => {
+    option.addEventListener('click', function(event) {
+        this.classList.toggle('list-active');
+        event.stopPropagation();
+    })
+})
+
+const multiplier = document.querySelector('.multiplier');
+const editorMultiplierButton = document.querySelectorAll('.editor-muliplier-button');
+const editorAddToCartButton = document.querySelector('.add-to-cart-button-editor');
+const editorTotal = document.querySelector('.total-editor');
+
+let multiplierValue = 1; // Example initial value
+let totalValue = multiplierValue * 149;
+
+editorMultiplierButton.forEach(option => {
+    option.addEventListener('click', function() {
+        // Adjust multiplier value based on button clicked
+        if (option.classList.contains('plus-button-editor')) {
+            multiplierValue += 1;
+        } else if (option.classList.contains('minus-button-editor') && multiplierValue > 1) {
+            multiplierValue -= 1; // Prevent going below 1
+        }
+        
+        // Clear previous text and display the updated value
+
+        multiplier.innerHTML = ''; // Clear previous <p>
+        editorTotal.innerHTML = '';
+
+        let multiplierText = document.createElement('p');
+        multiplierText.innerHTML = `${multiplierValue}`; // Set new value
+        multiplier.appendChild(multiplierText); // Append new <p>
+
+        let totalText = document.createElement('p');
+        totalText.innerHTML = `${multiplierValue * 149} kr.`;
+        editorTotal.appendChild(totalText);
+    });
+});
+
+editorAddToCartButton.addEventListener('click', function() {
+
+    for (let i = 0; i < multiplierValue; i++) {
+        let product_id = 1;
+        addToCart(product_id);
+    }
+    
+})
 
 
 //document.body.style.overflow = 'hidden';
