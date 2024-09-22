@@ -888,9 +888,11 @@ editorAddToCartButton.addEventListener('click', function() {
 
     for (let i = 0; i < multiplierValue; i++) {
         let product_id = 1;
-        addToCart(product_id);
+        addToCart(product_id);  
     }
-    
+    multiplier.innerHTML = '1'; // Clear previous <p>
+    editorTotal.innerHTML = '149 kr.';
+    multiplierValue = 1;
 })
 
 
