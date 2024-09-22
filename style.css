@@ -1,6 +1,9 @@
 
 
 /* -------- Project style --------- */
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     padding: 0;
@@ -10,7 +13,7 @@ body {
     overflow-y: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    scroll-behavior: smooth;
+    
 }
 body.active{
     margin: 0;
@@ -27,7 +30,11 @@ body::-webkit-scrollbar {
     --item-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     --image-box-shadow:  rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-
+a {
+    text-decoration: none;
+    font-family: "Poppins", system-ui;
+    color: var(--black);
+}
 h1 {
     font-family: "Poppins", system-ui;
     font-weight: 600;
