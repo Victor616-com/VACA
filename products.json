@@ -222,7 +222,8 @@
         "beef": false,
         "chicken": false,
         "pork": false 
-    },{
+    },
+    {
         "id": 23,
         "name": "Green peas (VG)",
         "description": "Pea protein, vegan cheese, rice, corn salsa, seasonal salad, tomato salsa, chili mayo and VACA BBQ sauce.",
@@ -231,7 +232,8 @@
         "beef": false,
         "chicken": false,
         "pork": false 
-    },{
+    },
+    {
         "id": 24,
         "name": "Jack (VG)",
         "description": "Pulled jackfruit, beans, rice, pickled red onions, tomatillo crunch, seasonal salad and chili mayo.",
@@ -240,7 +242,8 @@
         "beef": false,
         "chicken": false,
         "pork": false 
-    },{
+    },
+    {
         "id": 25,
         "name": "Taco kit",
         "description": "1 optional protein and 1 optional dip. 4 taco pancakes, seasonal salad, coriander, lime, tomato salsa, pickled red onions and crunch strips are included.",
@@ -249,9 +252,415 @@
         "beef": true,
         "chicken": true,
         "pork": true 
+    },
+    {
+        "id": 26,
+        "name": "Burrito bowl",
+        "description": "1 optional protein and 1 optional dip. Sour cabbage, rice, Gouda cheese, corn salsa, pickled red onions.",
+        "image": "resources/img/item26.png",
+        "price": 105,
+        "beef": true,
+        "chicken": true,
+        "pork": true 
+    },
+    {
+        "id": 27,
+        "name": "Chili con carne bowl",
+        "description": "Pulled jackfruit, beans, rice, pickled red onions, tomatillo crunch, seasonal salad and chili mayo.",
+        "image": "resources/img/item27.png",
+        "price": 119,
+        "beef": true,
+        "chicken": false,
+        "pork": false 
+    },
+    {
+        "id": 28,
+        "name": "Salad bowl",
+        "description": "Pulled jackfruit, beans, rice, pickled red onions, tomatillo crunch, seasonal salad and chili mayo.",
+        "image": "resources/img/item24.png",
+        "price": 105,
+        "beef": false,
+        "chicken": false,
+        "pork": false 
+    },
+    {
+        "id": 29,
+        "name": "Grilled quesadilla",
+        "description": "Mexican toast with onions, corn salsa and Gouda cheese. Choose between long-braised beef or long-braised pork. Choose between chili mayo or Mexican mayo.",
+        "image": "resources/img/item29.png",
+        "price": 99,
+        "beef": true,
+        "chicken": false,
+        "pork": true 
+    },
+    {
+        "id": 30,
+        "name": "Grilled Quesadilla (V) (VG)",
+        "description": "Mexican toast with onions, corn salsa and vegan cheese. Choose between pea protein or jackfruit. Choose between chili mayo or Mexican mayo.",
+        "image": "resources/img/item30.png",
+        "price": 99,
+        "beef": false,
+        "chicken": false,
+        "pork": false 
+    },
+    {
+        "id": 31,
+        "name": "Ensalada bowl (V) (VG)",
+        "description": "Choose from pea protein or jackfruit, beans, seasonal salad, sauerkraut, tomato salsa, vegan cheese, corn salsa and vinaigrette. Topped with crunch strips.",
+        "image": "resources/img/item31.png",
+        "price": 105,
+        "beef": false,
+        "chicken": false,
+        "pork": false 
+    },
+    {
+        "id": 32,
+        "name": "Chilli sin carne bowl (V) (VG) 🌶",
+        "description": "Pea protein, rice, beans, corn salsa, tomato salsa, vegan cheese, crispy onions, sour cream and lime. Served with tortilla chips.",
+        "image": "resources/img/item32.png",
+        "price": 110,
+        "beef": false,
+        "chicken": false,
+        "pork": false 
+    },
+    {
+        "id": 33,
+        "name": "Burrito bowl (V) (VG)",
+        "description": "1 optional protein and 1 optional dip. Sour cabbage, rice, vegan cheese, corn salsa, pickled red onions, beans and tomato salsa are included.",
+        "image": "resources/img/item33.png",
+        "price": 105,
+        "beef": false,
+        "chicken": false,
+        "pork": false 
+    },
+    {
+        "id": 34,
+        "name": "Taco kit (V) (VG)",
+        "description": "1 optional protein and 1 optional dip. 4 taco pancakes, seasonal salad, coriander, lime, tomato salsa, pickled red onions and crunch strips are included.",
+        "image": "resources/img/item34.png",
+        "price": 115,
+        "beef": false,
+        "chicken": false,
+        "pork": false 
+    },
+    {
+        "id": 35,
+        "name": "Jack burrito (VG)",
+        "description": "Pulled jackfruit, beans, rice, pickled red onions, tomatillo crunch, seasonal salad and chili mayo.",
+        "image": "resources/img/item35.png",
+        "price": 109 ,
+        "beef": false,
+        "chicken": false,
+        "pork": false 
+    },
+    {
+        "id": 36,
+        "name": "Green Peas (VG)",
+        "description": "Pea protein, vegan cheese, rice, corn salsa, seasonal salad, tomato salsa, chili mayo and VACA BBQ sauce.",
+        "image": "resources/img/item36.png",
+        "price": 109,
+        "beef": false,
+        "chicken": false,
+        "pork": false 
+    },
+    {
+        "id": 37,
+        "name": "The perfect duo (VG)",
+        "description": "Guacamole and tortilla chips in three different sizes.",
+        "image": "resources/img/item37.png",
+        "price": 49,
+        "beef": false,
+        "chicken": false,
+        "pork": false 
+    },
+    {
+        "id": 38,
+        "name": "Nachos (V) (VG)",
+        "description": "Tortilla chips, Gouda cheese and tomato salsa. Choose between pea protein or jackfruit. Served with a dip of your choice.",
+        "image": "resources/img/item38.png",
+        "price": 105,
+        "beef": false,
+        "chicken": false,
+        "pork": false 
+    },
+    {
+        "id": 39,
+        "name": "Tortilla chips (V) (VG)",
+        "description": "Homemade tortilla chips with tomato powder. Served with Mexican mayo.",
+        "image": "resources/img/item39.png",
+        "price": 40,
+        "beef": false,
+        "chicken": false,
+        "pork": false 
+    },
+    {
+        "id": 40,
+        "name": "Padrons (VG)",
+        "description": "Flash-fried padrons with chipotle spices and flake salt. Served with lime.",
+        "image": "resources/img/item40.png",
+        "price": 38,
+        "beef": false,
+        "chicken": false,
+        "pork": false 
+    },
+    {
+        "id": 41,
+        "name": "Taco Hops (V) (VG)",
+        "description": "Grilled taco with vegan cheese and pea protein.",
+        "image": "resources/img/item41.png",
+        "price": 19,
+        "beef": false,
+        "chicken": false,
+        "pork": false 
+    },
+    {
+        "id": 42,
+        "name": "Taco Pancakes (2 pcs.)",
+        "description": "Taco pancakes with nutella and marshmallows.",
+        "image": "resources/img/item42.png",
+        "price": 36,
+        "beef": false,
+        "chicken": false,
+        "pork": false 
+    },
+    {
+        "id": 43,
+        "name": "Churros with sugar & cinnamon",
+        "description": "Delicious Churros with sugar & cinnamon.",
+        "image": "resources/img/item43.png",
+        "price": 39,
+        "beef": false,
+        "chicken": false,
+        "pork": false 
+    },
+    {
+        "id": 44,
+        "name": "Dip trio",
+        "description": "3 optional dips",
+        "image": "resources/img/item44.png",
+        "price": 39,
+        "beef": false,
+        "chicken": false,
+        "pork": false 
+    },
+    {
+        "id": 45,
+        "name": "Chili Mayo (VG)",
+        "description": "",
+        "image": "resources/img/item44.png",
+        "price": 18,
+        "beef": false,
+        "chicken": false,
+        "pork": false 
+    },
+    {
+        "id": 46,
+        "name": "Mexican Mayo (V)",
+        "description": "",
+        "image": "resources/img/item44.png",
+        "price": 18,
+        "beef": false,
+        "chicken": false,
+        "pork": false 
+    },
+    {
+        "id": 47,
+        "name": "Medium Chili Salsa (VG)",
+        "description": "",
+        "image": "resources/img/item44.png",
+        "price": 18,
+        "beef": false,
+        "chicken": false,
+        "pork": false 
+    },
+    {
+        "id": 48,
+        "name": "Hot Chili Salsa (VG)",
+        "description": "",
+        "image": "resources/img/item44.png",
+        "price": 18,
+        "beef": false,
+        "chicken": false,
+        "pork": false 
+    },
+    {
+        "id": 49,
+        "name": "Queso (V)",
+        "description": "",
+        "image": "resources/img/item44.png",
+        "price": 18,
+        "beef": false,
+        "chicken": false,
+        "pork": false 
+    },
+    {
+        "id": 50,
+        "name": "VACA BBQ sauce (VG)",
+        "description": "",
+        "image": "resources/img/item44.png",
+        "price": 18,
+        "beef": false,
+        "chicken": false,
+        "pork": false 
+    },
+    {
+        "id": 51,
+        "name": "Guacamole (VG)",
+        "description": "",
+        "image": "resources/img/item44.png",
+        "price": 28,
+        "beef": false,
+        "chicken": false,
+        "pork": false 
+    },
+    {
+        "id": 52,
+        "name": "Water 500ml",
+        "description": "",
+        "image": "resources/img/item52.png",
+        "price": 25,
+        "beef": false,
+        "chicken": false,
+        "pork": false 
+    },
+    {
+        "id": 53,
+        "name": "Danish Water 500ml",
+        "description": "",
+        "image": "resources/img/item53.png",
+        "price": 25,
+        "beef": false,
+        "chicken": false,
+        "pork": false 
+    },
+    {
+        "id": 54,
+        "name": "Jarrito’s Coke 350ml",
+        "description": "",
+        "image": "resources/img/item54.png",
+        "price": 39,
+        "beef": false,
+        "chicken": false,
+        "pork": false 
+    },
+    {
+        "id": 55,
+        "name": "Jarrito’s mango 350ml",
+        "description": "",
+        "image": "resources/img/item55.png",
+        "price": 39,
+        "beef": false,
+        "chicken": false,
+        "pork": false 
+    },
+    {
+        "id": 56,
+        "name": "Jarrito’s lime 350ml",
+        "description": "",
+        "image": "resources/img/item56.png",
+        "price": 39,
+        "beef": false,
+        "chicken": false,
+        "pork": false 
+    },
+    {
+        "id": 57,
+        "name": "Jarrito’s tangerine 350ml",
+        "description": "",
+        "image": "resources/img/item57.png",
+        "price": 39,
+        "beef": false,
+        "chicken": false,
+        "pork": false 
+    },
+    {
+        "id": 58,
+        "name": "Jarrito’s guava 350ml",
+        "description": "",
+        "image": "resources/img/item58.png",
+        "price": 39,
+        "beef": false,
+        "chicken": false,
+        "pork": false 
+    },
+    {
+        "id": 59,
+        "name": "Jarrito’s Grape 350ml",
+        "description": "",
+        "image": "resources/img/item59.png",
+        "price": 38,
+        "beef": false,
+        "chicken": false,
+        "pork": false 
+    },
+    {
+        "id": 60,
+        "name": "Jarrito’s Pineapple 350ml",
+        "description": "",
+        "image": "resources/img/item60.png",
+        "price": 39,
+        "beef": false,
+        "chicken": false,
+        "pork": false 
+    },
+    {
+        "id": 61,
+        "name": "Coca Cola 330ml",
+        "description": "",
+        "image": "resources/img/item61.png",
+        "price": 25,
+        "beef": false,
+        "chicken": false,
+        "pork": false 
+    },
+    {
+        "id": 62,
+        "name": "Coca Cola Zero 330ml",
+        "description": "",
+        "image": "resources/img/item62.png",
+        "price": 25,
+        "beef": false,
+        "chicken": false,
+        "pork": false 
+    },
+    {
+        "id": 63,
+        "name": "Fanta 330ml",
+        "description": "",
+        "image": "resources/img/item63.png",
+        "price": 25,
+        "beef": false,
+        "chicken": false,
+        "pork": false 
+    },
+    {
+        "id": 64,
+        "name": "Faxe Kondi 330ml",
+        "description": "",
+        "image": "resources/img/item64.png",
+        "price": 25,
+        "beef": false,
+        "chicken": false,
+        "pork": false 
+    },
+    {
+        "id": 65,
+        "name": "Pepsi Max 330ml",
+        "description": "",
+        "image": "resources/img/item65.png",
+        "price": 25,
+        "beef": false,
+        "chicken": false,
+        "pork": false 
+    },
+    {
+        "id": 66,
+        "name": "Corona Extra 4.5% 355ml",
+        "description": "",
+        "image": "resources/img/item66.png",
+        "price": 45,
+        "beef": false,
+        "chicken": false,
+        "pork": false 
     }
-
-
-    
-    
 ]
