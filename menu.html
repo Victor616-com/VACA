@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VACA</title>
+    <link rel="icon" href="resources/img/tab-icon.svg">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+</head>
+<body>
+    
+    <div id="back-button" data-cart-close>
+        <img src="resources/img/back-arrow.svg" alt="arrow">
+        <p>Back</p>
+    </div>
+
+
+    <div id="cart">
+        
+        <div id="cart-body">
+            <div id="cart-header"><h1>Order summary</h1></div>
+            <div id="cart-items-container">
+                <div id="cart-items-container-flex-box">
+                  
+                </div>
+            </div>
+            <div id="cart-bottom"> 
+                <button id="pay-btn">Pay</button>
+                <span id="total"> kr.</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="menu-editor" id="menu-editor-burrito">
+        <div class="image-cropper"><img src="resources/img/item1.jpg" alt="Burrito"></div>
+        <div class="menu-body">
+            <div class="menu-editor-header"><h1>Burrito combo menu</h1></div>
+            <p class="description">1 optional burrito bowl and 1 optional soft drink/water. Served with tortilla chips and optional dip.</p>
+            <div class="list-container">
+                <ul class="editor-list">
+                    <li>
+                        Meat
+                        <ul class="nested">
+                            <li>Pork</li>
+                            <li>Beef</li>
+                            <li>Chicken</li>
+                            <li>Chrispy Chichen</li>
+                            <li>Shrimp</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Dips 
+                        <ul class="nested">
+                            <li>Chili Mayo (VG)</li>
+                            <li>Mexican Mayo (V)</li>
+                            <li>Medium Chili Salsa (VG)"</li>
+                            <li>Hot Chili Salsa (VG)</li>
+                            <li>Queso (V)</li>
+                            <li>VACA BBQ sauce (VG)</li>
+                            <li>Guacamole (VG)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Beverage
+                        <ul class="nested">
+                            <li>Water 500ml</li>
+                            <li>Danish Water 500ml</li>
+                            <li>Jarrito’s Coke 350ml</li>
+                            <li>Jarrito’s mango 350ml</li>
+                            <li>Jarrito’s lime 350ml</li>
+                            <li>Jarrito’s tangerine 350ml</li>
+                            <li>Jarrito’s guava 350ml</li>
+                            <li>Jarrito’s Grape 350ml</li>
+                            <li>Jarrito’s Pineapple 350ml</li>
+                            <li>Coca Cola 330ml"</li>
+                            <li>Coca Cola Zero 330ml</li>
+                            <li>Fanta 330ml</li>
+                            <li>Faxe Kondi 330ml</li>
+                            <li>Pepsi Max 330ml"</li>
+                            <li>Corona Extra 4.5% 355ml</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Desert
+                        <ul class="nested">
+                            <li>Taco Pancakes</li>
+                            <li>Churros with sugar & cinnamon</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu-editor-bottom">
+                <div class="plus-minus-button-editor">
+                    <div class="minus-button-editor editor-muliplier-button">-</div>
+                    <span class="multiplier">1</span>
+                    <div class="plus-button-editor editor-muliplier-button">+</div>
+                </div>
+                <div class="add-to-cart-button-editor" data-cart-close>
+                    <h2>Add to cart</h2>
+                    <span class="total-editor">149 kr.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="overlay"></div>
+
+    <div id="all-content-container">
+        <header id="header">
+            <div id="top-header">
+                
+                
+                <img src="resources/img/logovaca.svg" alt="vaca logo" id="vaca-logo">
+                <div id="nav-right-section">
+                    <div id="language-selector">
+                        <img src="resources/img/uk flag 1.svg" alt="uk flag" id="lang-eng">
+                        <img src="resources/img/dk flag 1.svg" alt="denmark flag" id="lang-dan">
+                    </div>
+                    <div id="cart-icon" data-cart-target="#cart">
+                        <span>0</span>
+                        <img src="resources/img/cart-icon.svg" alt="cart icon">
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            <div id="nav"></div>
+            <div id="bottom-header">
+                <ul id="nav">
+                    <li class="nav-item"><a href="#menus">Menus</a></li>
+                    <li class="nav-item"><a href="#sides">Sides</a></li>  
+                    <li class="nav-item"><a href="#burritos">Burritos</a></li>
+                    <li class="nav-item"><a href="#tacos">Tacos</a></li>
+                    <li class="nav-item"><a href="#bowls">Bowls</a></li>
+                    <li class="nav-item"><a href="#quesadilla">Quesadilla</a> </li>
+                    <li class="nav-item"><a href="#veg">Vegan</a></li>
+                    <li class="nav-item"><a href="#dessert">Dessert</a></li>
+                    <li class="nav-item"><a href="#dips">Dips</a></li>
+                    <li class="nav-item"><a href="#water">Water</a></li>
+                    <li class="nav-item"><a href="#soda">Sodas</a></li>
+                </ul>
+            </div>
+        </header>
+        <div id="container">
+            <section id="menus">
+                <h1>Menus</h1>
+
+                <div class="items-container-menu">
+
+                    
+                </div>
+                
+            </section>
+            <section id="sides">
+                <h1>Sides</h1>
+
+                <div class="items-container-sides">
+                    
+                </div>
+                
+            </section>
+            <section id="snacks">
+                <h1>Snacks</h1>
+
+                <div class="items-container-snacks">
+                    
+                </div>
+                
+            </section>
+            <section id="burritos">
+                <h1>Burritos</h1>
+
+                <div class="items-container-burritos">
+                    
+                </div>
+                
+            </section>
+            <section id="tacos">
+                <h1>Tacos</h1>
+
+                <div class="items-container-tacos">
+                    
+                </div>
+                
+            </section>
+            <section id="bowls">
+                <h1>Bowls</h1>
+
+                <div class="items-container-bowls">
+                    
+                </div>
+                
+            </section>
+            <section id="quesadilla">
+                <h1>Quesadilla</h1>
+
+                <div class="items-container-quesadilla">
+                    
+                </div>
+                
+            </section>
+            <section id="veg">
+                <h1>Vegetarian & Vegan 💚</h1>
+
+                <div class="items-container-veg">
+                    
+                </div>
+                
+            </section>
+            <section id="dessert">
+                <h1>Dessert</h1>
+
+                <div class="items-container-dessert">
+                    
+                </div>
+                
+            </section>
+            <section id="dips">
+                <h1>Dips</h1>
+
+                <div class="items-container-dips">
+                    
+                </div>
+                
+            </section>
+            <section id="water">
+                <h1>Water</h1>
+
+                <div class="items-container-water">
+                    
+                </div>
+                
+            </section>
+            <section id="soda">
+                <h1>Soda</h1>
+
+                <div class="items-container-soda">
+                    
+                </div>
+                
+            </section>
+            <section id="beer">
+                <h1>Beer</h1>
+
+                <div class="items-container-beer">
+                    
+                </div>
+                
+            </section>
+        </div>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+
+
+</html>

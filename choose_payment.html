@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VACA - Payment</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+</head>
+<body>
+    <div class="content-wrapper">
+        <header>
+            <button class="back-button">
+                <img src="resources/img/arrow_back_ios_new (1).png" alt="back arrow">Back
+            </button> 
+            <div class="logo">
+                <img src="resources/img/logovaca 1 (1).png" alt="VACA Logo">
+            </div>
+        </header>
+        <h1>How would you like to <span class="highlight">pay</span>?</h1>
+            <div class="payment-options">
+                <a href="cash.html">
+                    <div class="option">
+                        <span>Cash</span>
+                        <img src="resources/img/table_restaurant (2).png" alt="cash">
+                    </div>
+                </a>
+                <a href="card.html">
+                    <div class="option">
+                        <span>Card</span>
+                        <img src="resources/img/Frame 42 (1).png" alt="card">
+                    </div>
+                </a>
+                <a href="mobilepay.html">
+                    <div class="option">
+                        <span>MobilePay</span>
+                        <img src="resources/img/Frame 44 (1).png" alt="mobilepay">
+                    </div>
+                </a>
+            </div>
+    </div>
+</body>
+
+<script>
+    const backBtn = document.querySelector('.back-button');
+    backBtn.addEventListener('click', function() {
+        window.open("menu.html", "_self");
+    });
+
+    const buttons = document.querySelectorAll('.option');
+    buttons.forEach(btn => {
+        btn.addEventListener('click', function() {
+            localStorage.removeItem('cart');
+    });
+});
+    
+</script>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VACA - Card</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+</head>
+<body>
+    <div class="content-wrapper">
+        <header>
+            <div class="logo">
+                <img src="resources/img/logovaca 1 (1).png" alt="VACA Logo">
+            </div>
+        </header>
+            <div class="payment-cash">
+                <h1>Your order number is:</h1>
+                <strong>56</strong>
+                <p>Take your receipt to the <br>cash register to pay.</p>
+                <h2><span class="highlight">Thank you!</span></h2>
+                <div class="optioncash"></div>
+            </div>
+    </div>
+</body>
+
+<script>
+    const click = document.querySelector('.payment-cash');
+    click.addEventListener('click', function() {
+        window.open("index.html","_self");
+    })
+</script>
+
+
+</html>

@@ -61,7 +61,9 @@ h3 {
 p {
     margin: 0;
 }
-
+#lang-dan {
+    filter: saturate(0);
+}
 #back-button {
     top: 35px;
     left: 66px;
@@ -353,9 +355,7 @@ p {
     font-style: normal;
     font-size: 16px;
 }
-.menu-editor .menu-body .list-container .editor-list li {
-    
-}
+
 .menu-editor .menu-body .list-container .editor-list li.list-active {
     padding-bottom: 0px;
 }

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VACA - Card</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+</head>
+<body>
+    <div class="content-wrapper">
+        <header>
+            <div class="logo">
+                <img src="resources/img/logovaca 1 (1).png" alt="VACA Logo">
+            </div>
+        </header>
+            <div class="payment-card">
+                <h1>Please follow the instructions<br> on the<span class="highlight"> POS</span></h1>
+                <div class="optioncard">
+                    <img src="resources/img/card reader img.png" alt="card-reader">
+                </div>
+            </div>
+    </div>
+</body>
+
+<script>
+    const click = document.querySelector('.payment-card');
+    click.addEventListener('click', function() {
+        window.open("processing.html","_self");
+    })
+</script>
+</html>

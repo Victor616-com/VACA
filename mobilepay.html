@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VACA - Card</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+</head>
+<body>
+    <div class="content-wrapper">
+        <header>
+            <div class="logo">
+                <img src="resources/img/logovaca 1 (1).png" alt="VACA Logo">
+            </div>
+        </header>
+            <div class="payment-mobile">
+                <h1>Please scan the QR code with the<span class="highlight"> MobilePay App</span></h1>
+                <div class="optionmobile">
+                    <img src="resources/img/QR Code.png" alt="card-reader">
+                </div>
+            </div>
+    </div>
+</body>
+
+<script>
+    const click = document.querySelector('.payment-mobile');
+    click.addEventListener('click', function() {
+        window.open("processing.html","_self");
+    })
+</script>
+</html>

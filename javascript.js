@@ -614,6 +614,7 @@ document.addEventListener('click', (event) => {
     }
 });
 
+
 /* ----- Function that adds a product to the shopping cart or increases its quantity if it’s already in the cart.  -----*/
 const addToCart = (product_id) => {
     // findIndex(): This method searches the carts array for an item where the product_id matches the input product_id.
@@ -719,6 +720,7 @@ const deleteItemInCart = (product_id, type) => {
         carts.splice(positionItemInCart, 1);
     }
     addCartToHTML();
+    addCartToMemory();
 }
 
 /* ----- The change quantity function ---- */
@@ -740,6 +742,7 @@ const changeQuantity = (product_id, type) => {
         }
     } 
     addCartToHTML();
+    addCartToMemory();
 };
 
 /* ----- Function that retrives the JSON file with the products ---- */
@@ -792,6 +795,9 @@ window.addEventListener('scroll', function() {
     }
     lastScrollTOp = scrollTop
 })
+
+
+
 
 /* ------ Open / CLose Cart ------ */
 
@@ -887,5 +893,10 @@ editorAddToCartButton.addEventListener('click', function() {
     multiplierValue = 1;
 })
 
+const payBtn = document.getElementById('pay-btn');
 
+payBtn.addEventListener('click', function() {
+    window.open("choose_payment.html","_self");
+})
 //document.body.style.overflow = 'hidden';
+

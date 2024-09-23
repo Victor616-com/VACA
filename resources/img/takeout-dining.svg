@@ -1,0 +1,27 @@
+<svg width="144" height="141" viewBox="0 0 144 141" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="144" height="141" fill="#1E1E1E"/>
+<g id="Where will you be eating?">
+<rect width="1194" height="834" transform="translate(-690 -379)" fill="white"/>
+<g id="Frame 4">
+<g id="Frame 2" filter="url(#filter0_d_0_1)">
+<rect x="-78" y="-129.571" width="300" height="336" rx="16" fill="white"/>
+<g id="material-symbols-light:takeout-dining-outline-rounded">
+<path id="Vector" d="M50.4341 105.429H93.6374C94.6294 105.429 95.4688 105.112 96.1553 104.478C96.8418 103.841 97.2228 103.036 97.2981 102.063L100.358 62.805H43.678L46.7733 102.063C46.8487 103.036 47.2297 103.841 47.9162 104.478C48.6027 105.116 49.442 105.433 50.4341 105.429ZM43.2435 56.9658H100.792L101.697 45.8592L84.7979 29.5958H59.2021L42.3089 45.865L43.2435 56.9658ZM37.66 62.3967L18.5882 44.7217C18.0327 44.1733 17.7549 43.522 17.7549 42.7675C17.7549 42.0131 17.993 41.3247 18.4692 40.7025C19.0287 40.0803 19.7133 39.7322 20.5228 39.6583C21.3323 39.5806 22.0546 39.8528 22.6895 40.475L37.041 53.8742L36.5826 47.4342C36.5509 46.1703 36.7692 44.9647 37.2374 43.8175C37.7057 42.6703 38.3882 41.6611 39.2851 40.79L53.8092 26.5567C54.6703 25.7089 55.706 25.0322 56.9164 24.5267C58.1267 24.0172 59.3728 23.7625 60.6546 23.7625H83.3455C84.6273 23.7625 85.8733 24.0153 87.0837 24.5208C88.294 25.0342 89.3297 25.7128 90.1909 26.5567L104.715 40.79C105.608 41.665 106.29 42.68 106.763 43.835C107.235 44.99 107.453 46.2014 107.417 47.4692L106.959 53.8683L121.316 40.4808C121.951 39.8586 122.672 39.5845 123.477 39.6583C124.287 39.7361 124.969 40.0842 125.525 40.7025C126.005 41.3247 126.245 42.0131 126.245 42.7675C126.245 43.522 125.967 44.1714 125.412 44.7158L106.34 62.3967H37.66ZM93.5659 111.263H50.4341C47.946 111.263 45.7713 110.428 43.9102 108.76C42.049 107.092 41.0173 105.038 40.8149 102.6L37.66 62.3967H106.34L103.185 102.606C102.987 105.04 101.955 107.092 100.09 108.76C98.2287 110.428 96.0541 111.263 93.5659 111.263Z" fill="black"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_0_1" x="-99.3" y="-146.871" width="342.6" height="378.6" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feMorphology radius="2" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_0_1"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="9.65"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+</filter>
+</defs>
+</svg>

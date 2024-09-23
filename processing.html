@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VACA - Card</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+</head>
+<body>
+    <div class="content-wrapper">
+        <header>
+            <div class="logo">
+                <img src="resources/img/logovaca 1 (1).png" alt="VACA Logo">
+            </div>
+        </header>
+        <div class="processing">
+            <img src="resources/img/car-dealer-loader.gif" alt="">
+        </div>
+        <div>
+            <p><span class="highlight"> Processing your payment</span></p>
+        </div>
+    </div>
+</body>
+
+<script>
+    function openPageAfterDelay(url, delay) {
+    window.addEventListener('DOMContentLoaded', () => {
+        setTimeout(() => {
+            window.open("ordernumber.html","_self"); // Redirect to the specified URL
+        }, delay);
+    });
+}
+
+// Usage example
+openPageAfterDelay("second.html", 3000); // Opens "second.html" after 3 seconds
+</script>
+</html>
