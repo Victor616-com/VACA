@@ -1,5 +1,4 @@
 
-
 let listProductMenusHTML = document.querySelector('.items-container-menu');
 let listProductSidesHTML = document.querySelector('.items-container-sides');
 let listProductSnacksHTML = document.querySelector('.items-container-snacks');
@@ -13,8 +12,6 @@ let listProductDipsHTML = document.querySelector('.items-container-dips');
 let listProductWaterHTML = document.querySelector('.items-container-water');
 let listProductSodaHTML = document.querySelector('.items-container-soda');
 let listProductBeerHTML = document.querySelector('.items-container-beer');
-
-
 
 let listProducts = [];
 let listProductsSides = [];
@@ -37,7 +34,6 @@ let iconCartSpan = document.querySelector('#cart-icon span');
 const addDataToHTML = () => {
 
 /* ----- Display data from jason file on screen ---- */
-
 
     /* ----- Display data in the Menus section ---- */
     if(listProductsMenus.length > 0) {
@@ -591,8 +587,8 @@ const addDataToHTML = () => {
     }
 }
 
-    /* ----- Add to cart javascript ---- */
 
+/* ----- Add to cart javascript ---- */
 document.addEventListener('click', (event) => {
     let positionClick = event.target;
     let positionClickMenu = event.target.closest('.menu-item') 
@@ -615,16 +611,10 @@ document.addEventListener('click', (event) => {
         let product_id = positionClick.closest('.item').dataset.id;
         addToCart(product_id);
         positionClick.classList.add('onclick');
-        
-
     }
 });
 
-
-
-
 /* ----- Function that adds a product to the shopping cart or increases its quantity if it’s already in the cart.  -----*/
-
 const addToCart = (product_id) => {
     // findIndex(): This method searches the carts array for an item where the product_id matches the input product_id.
     // If the product is not found, findIndex returns -1.
@@ -812,6 +802,7 @@ const stopScroll = document.getElementById('all-content-container');
 const bodyStopScroll = document.querySelector('body');
 const editor = document.querySelector('#menu-editor-burrito');
 
+// Says what the open cart buttons do
 openCartButtons.forEach(button => {
     button.addEventListener('click', () => {
         const cart = document.querySelector(button.dataset.cartTarget);
@@ -820,6 +811,7 @@ openCartButtons.forEach(button => {
     })
 })
 
+//Says what the close cart buttons do
 closeCartButtons.forEach(button => {
     button.addEventListener('click', () => {
         const cart = document.querySelector('#cart');
