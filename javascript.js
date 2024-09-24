@@ -608,11 +608,20 @@ document.addEventListener('click', (event) => {
 
     /* ----- Code for add to cart button -----*/
     if(positionClick.classList.contains('add-item-to-cart')){
+        let cartIcon = document.querySelector('#cart-icon span')
         let product_id = positionClick.closest('.item').dataset.id;
         addToCart(product_id);
         positionClick.classList.add('onclick');
+        cartIcon.style.transition = 'transform 0.2s';  // Set transition for smooth effect
+        cartIcon.style.transform = 'scale(1.5)';  // Scale up
+
+        // Reset back to normal size after 200ms
+        setTimeout(() => {
+            cartIcon.style.transform = 'scale(1)';  // Scale back down
+        }, 200);  // Wait for 200ms before scaling down
     }
 });
+
 
 
 /* ----- Function that adds a product to the shopping cart or increases its quantity if it’s already in the cart.  -----*/
